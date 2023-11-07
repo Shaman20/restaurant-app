@@ -1,0 +1,29 @@
+.background-container {
+    background: linear-gradient(rgba(131, 126, 126, 0.5), rgba(143, 142, 142, 0.5)),
+                url('https://skygarden.london/wp-content/uploads/2023/01/Larch-Tasting-0084-1-3840x2160.jpg');
+    background-size: cover;
+    background-position: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .text-container {
+    color: white; 
+  }
+  
+  .main-heading {
+    font-size: 100px;
+    font-weight: 1000;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  .sub-heading {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  

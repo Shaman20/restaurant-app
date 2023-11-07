@@ -1,0 +1,26 @@
+<ng-container *ngIf="posts && posts.length > 0; else noPostsMessage">
+  <!-- Display posts -->
+  <mat-card *ngFor="let post of posts" class="feed-card">
+    <mat-card-content>
+      <mat-card-title [innerHTML]="post.content"></mat-card-title>
+      <div class="like-button">
+        <button mat-button color="primary" (click)="toggleLike(post)">
+          <mat-icon>{{ post.liked ? "favorite" : "favorite_border" }}</mat-icon>
+        </button>
+        <span class="like-count">{{ post.likes }}</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
+
+<ng-template #noPostsMessage>
+  <mat-card class="feed-card">
+    <mat-card-content class="bold-text">
+      <div class="mat-title">
+        Excited to create your post!
+        <br />
+        Please click on the new post button.
+      </div>
+    </mat-card-content>
+  </mat-card>
+</ng-template>

@@ -1,0 +1,21 @@
+.feed-card {
+  margin: 40px auto;
+  width: 60%;
+}
+
+.message-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+mat-card.mat-mdc-card.mdc-card.feed-card {
+  margin-top: 100px;
+}
+
+.mat-title {
+  font-weight: 800;
+  text-align: center;
+}

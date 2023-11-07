@@ -1,0 +1,42 @@
+.view-header {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.friends-list ul {
+  list-style: none;
+}
+
+.friends-list li {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.friends-list li {
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  width: 80%;
+  margin-left: 28px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-weight: 800;
+}

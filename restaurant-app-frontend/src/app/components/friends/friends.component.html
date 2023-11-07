@@ -1,0 +1,14 @@
+<div class="friends-list">
+  <button class="close-btn" mat-icon-button (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <h2 class="view-header">My Friends</h2>
+  <div *ngIf="friendsData.length === 0" class="no-friends-card">
+    <div class="card-content">Click on Add Friends to make new friends</div>
+  </div>
+  <ul *ngIf="friendsData.length > 0">
+    <li *ngFor="let friend of friendsData">
+      {{ friend.friend_fname }} {{ friend.friend_lastname }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,54 @@
+.form-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  width: 500px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.fields {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+Style the submit button button[type="submit"] {
+  width: 50%;
+  margin-top: 15px;
+  align-self: center;
+}
+Style error messages .mat-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-btn {
+  margin-right: 10px;
+}
+
+.green-text {
+    background-color: green;
+}
+

@@ -1,0 +1,24 @@
+<div class="data-container">
+  <button class="close-btn" mat-icon-button (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <h2 class="header">Add Friends</h2>
+  <ul class="friends-list">
+    <li *ngFor="let user of users" class="user-card">
+      <input
+        type="checkbox"
+        [checked]="user.isSelected"
+        (change)="toggleSelection(user)"
+      />
+      <span>{{ user.firstName }} {{ user.lastName }}</span>
+    </li>
+  </ul>
+  <button
+    class="add-friend-button"
+    mat-raised-button
+    color="primary"
+    (click)="addSelectedFriends()"
+  >
+    Add Friend
+  </button>
+</div>

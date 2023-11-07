@@ -1,0 +1,33 @@
+<div class="modal-container">
+  <button class="close-btn" mat-icon-button (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+<div class="form-container">
+  <h2 class="form-title">Sign Up</h2>
+  <form class="signup-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="fields">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName" required />
+    </mat-form-field>
+    <mat-form-field class="fields">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" required />
+    </mat-form-field>
+    <mat-form-field class="fields">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="emailId" required />
+      <mat-error *ngIf="signupForm.get('emailId')?.hasError('email')">
+        Invalid Email Address
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="fields">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" required />
+    </mat-form-field>
+    <div class="button-container">
+      <button class="login-btn" mat-raised-button color="primary" type="submit">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>

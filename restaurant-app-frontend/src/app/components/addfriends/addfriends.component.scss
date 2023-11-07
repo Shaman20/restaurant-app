@@ -1,0 +1,79 @@
+.data-container {
+  margin: 10px;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: -4px;
+  right: 10px;
+}
+
+/* Style for the title */
+.data-container h2 {
+  font-weight: bold;
+}
+
+/* Style for each list item */
+.data-container li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for the user names */
+.data-container span {
+  flex: 1;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style for the button icon */
+.data-container button mat-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.friend-button {
+  margin-right: 20px;
+}
+
+.user-card {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-friend-button {
+  margin-top: 10px;
+}
+
+/* You can style the checkboxes as needed */
+.user-card input[type="checkbox"] {
+  margin-left: auto;
+}
+
+.friends-list ul {
+  list-style: none;
+}
+
+.friends-list li {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.friends-list li {
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}

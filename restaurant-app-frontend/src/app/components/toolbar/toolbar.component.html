@@ -1,0 +1,74 @@
+  <mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+      <span>
+        <img
+          class="img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYFs9k8jASzU5xqGnvkxsft2g1mgfGFVi5ng&usqp=CAU"
+          width="50px"
+          height="50px"
+          alt="Logo"
+        />
+      </span>
+      <span class="example-spacer"></span>
+      <div class="example-button-row">
+        <button
+          mat-raised-button
+          class="center-button"
+          *ngIf="!isLoggedOut()"
+          (click)="scrollToTop()"
+          color="primary"
+        >
+          Feed
+        </button>
+        <button
+          mat-raised-button
+          *ngIf="isLoggedOut()"
+          (click)="openSignupDialog()"
+          color="primary"
+        >
+          SignUp
+        </button>
+        <button
+          mat-raised-button
+          *ngIf="!isLoggedOut()"
+          (click)="openViewFriendsDialog()"
+          color="primary"
+        >
+          My Friends
+        </button>
+        <button
+          mat-raised-button
+          *ngIf="!isLoggedOut()"
+          (click)="openAddFriendsDialog()"
+          color="primary"
+        >
+          Add Friends
+        </button>
+        <button
+          mat-raised-button
+          class="new-post"
+          *ngIf="!isLoggedOut()"
+          (click)="openSignupDialog()"
+          color="primary"
+        >
+          New Post
+        </button>
+        <button
+          mat-raised-button
+          *ngIf="isLoggedOut()"
+          (click)="openLoginDialog()"
+          color="primary"
+        >
+          LogIn
+        </button>
+        <button
+          mat-raised-button
+          (click)="logout()"
+          *ngIf="!isLoggedOut()"
+          color="primary"
+        >
+          Logout
+        </button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
